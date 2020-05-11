@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crm-m2i-mai"
+    }
+  },
+  "defaultProject": "crm-m2i-mai",
+  "cli": {
+    "analytics": "1d60ad48-606b-43d9-99ec-4b73946d2f56"
+  }
 }
