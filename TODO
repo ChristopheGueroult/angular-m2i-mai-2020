@@ -6,9 +6,9 @@
 ✔ PreloadAllModules @done(20-05-12 15:00)
 ✔ RouterEvents @done(20-05-12 15:50)
 ☐ ActivatedRoute
-☐ json server
-☐ create ressources
+✔ json server @done(20-05-12 15:59)
+✔ create ressources @done(20-05-12 15:59)
 ☐ interfaces
 ☐ models
-☐ enums
+✔ enums @done(20-05-12 15:59)
 
