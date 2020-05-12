@@ -4,5 +4,11 @@
 ✔ router @done(20-05-12 15:00)
 ✔ lazy loading @done(20-05-12 15:00)
 ✔ PreloadAllModules @done(20-05-12 15:00)
-☐ RouterEvents
+✔ RouterEvents @done(20-05-12 15:50)
 ☐ ActivatedRoute
+☐ json server
+☐ create ressources
+☐ interfaces
+☐ models
+☐ enums
+
