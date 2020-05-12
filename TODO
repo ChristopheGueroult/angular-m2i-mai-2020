@@ -1,5 +1,8 @@
 ✔ installer fontawesome @done(20-05-12 10:27)
 ✔ finir user interface @done(20-05-12 10:59)
 ✔ ng-content @done(20-05-12 10:59)
-☐ router
-☐ lazy loading
+✔ router @done(20-05-12 15:00)
+✔ lazy loading @done(20-05-12 15:00)
+✔ PreloadAllModules @done(20-05-12 15:00)
+☐ RouterEvents
+☐ ActivatedRoute
