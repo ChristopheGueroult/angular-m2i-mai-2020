@@ -4,12 +4,13 @@ import { TemplatesModule } from '../templates/templates.module';
 import { TableauLightComponent } from './components/tableau-light/tableau-light.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TotalPipe } from './pipes/total.pipe';
+import { TableauDarkComponent } from './components/tableau-dark/tableau-dark.component';
 
 
 
 @NgModule({
-  declarations: [TableauLightComponent, ButtonComponent, TotalPipe],
-  exports: [TemplatesModule, TableauLightComponent, ButtonComponent, TotalPipe],
+  declarations: [TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent],
+  exports: [TemplatesModule, TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent],
   imports: [
     CommonModule,
     TemplatesModule

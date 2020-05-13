@@ -18,9 +18,9 @@
 ✔ components intelligents vs components stupides @done(20-05-13 11:20)
 ✔ la notion de templates (components orentés design) @done(20-05-13 11:21)
 ✔ @Input() @done(20-05-13 11:21)
-☐ life cycles
-☐ pipes angular
-☐ pipe personnalisé et bonnes pratiques
+✔ life cycles @done(20-05-13 15:22)
+✔ pipes angular @done(20-05-13 15:23)
+✔ pipe personnalisé et bonnes pratiques @done(20-05-13 15:23)
 ☐ pipe async
 ☐ directives de structure
 ☐ directive personnalisée
