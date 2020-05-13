@@ -8,7 +8,8 @@ import { Order } from '../../models/order';
 })
 export class TableauLightComponent implements OnInit {
   @Input() collection: Order[];
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
