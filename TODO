@@ -8,7 +8,10 @@
 ☐ ActivatedRoute
 ✔ json server @done(20-05-12 15:59)
 ✔ create ressources @done(20-05-12 15:59)
-☐ interfaces
-☐ models
+✔ interfaces @done(20-05-12 16:18)
+✔ models @done(20-05-12 16:18)
 ✔ enums @done(20-05-12 15:59)
+☐ service
+☐ http
+☐ pipes rxjs
 

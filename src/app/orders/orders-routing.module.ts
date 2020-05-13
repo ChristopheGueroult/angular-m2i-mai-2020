@@ -4,7 +4,7 @@ import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orde
 
 
 const routes: Routes = [
-  { path: 'orders', component: PageListOrdersComponent },
+  { path: '', component: PageListOrdersComponent },
 ];
 
 @NgModule({
