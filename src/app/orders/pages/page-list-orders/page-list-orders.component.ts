@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { OrdersService } from '../../services/orders.service';
-import { Order } from 'src/app/shared/models/order';
 import { Observable } from 'rxjs';
+import { StateOrder } from 'src/app/shared/enums/state-order.enum';
+import { Order } from 'src/app/shared/models/order';
+import { OrdersService } from '../../services/orders.service';
 
 @Component({
   selector: 'app-page-list-orders',
@@ -13,6 +14,7 @@ export class PageListOrdersComponent implements OnInit {
   public title: string;
   public subtitle: string;
   public headers: string[];
+  public states = Object.values(StateOrder);
   constructor(private os: OrdersService) { }
 
   ngOnInit(): void {
@@ -28,6 +30,13 @@ export class PageListOrdersComponent implements OnInit {
       'Total TTC',
       'State'
     ];
+  }
+
+  public changeState(item: Order, event) {
+    this.os.changeState(item, event.target.value).subscribe((res) => {
+      // traite erreur
+      item.state = res.state;
+    });
 
   }
 

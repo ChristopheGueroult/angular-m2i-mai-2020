@@ -21,9 +21,10 @@
 ✔ life cycles @done(20-05-13 15:22)
 ✔ pipes angular @done(20-05-13 15:23)
 ✔ pipe personnalisé et bonnes pratiques @done(20-05-13 15:23)
-☐ pipe async
-☐ directives de structure
+✔ pipe async @done(20-05-13 16:21)
+✔ directives de structure @done(20-05-13 16:22)
 ☐ directive personnalisée
 ☐ viewencapsulation
+☐ TP : validation des acquis (page-list-clients)
 
 
