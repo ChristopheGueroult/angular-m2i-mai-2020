@@ -1,1 +1,31 @@
-<p>page-list-clients works!</p>
+<app-template-b [title]="title" [subtitle]="subtitle">
+
+  <app-tableau-dark *ngIf="collection$ | async as collection" [headers]="headers">
+
+    <tr *ngFor="let item of collection">
+      <td>{{ item.name }}</td>
+      <td>{{ item.ca }}</td>
+      <td>{{ item | total:'cattc' | currency: 'EUR' }}</td>
+      <td [appState]="item.state">
+        <select (change)="changeState(item, $event)">
+          <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">{{ state }}</option>
+        </select>
+      </td>
+      <td>
+        <app-icon-trash (click)="delete(item)"></app-icon-trash>
+      </td>
+    </tr>
+
+  </app-tableau-dark>
+
+  <app-button [text]="btnRoute.text" [route]="btnRoute.route"></app-button>
+
+  <app-text [page]="true">
+    <h1>A big title</h1>
+    <h2>A subtitle</h2>
+    <h3>A subsubtitle</h3>
+    <p>A very nice text</p>
+  </app-text>
+
+</app-template-b>
+

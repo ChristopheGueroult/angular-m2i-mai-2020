@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { StateOrder } from 'src/app/shared/enums/state-order.enum';
 import { Order } from 'src/app/shared/models/order';
 import { OrdersService } from '../../services/orders.service';
@@ -11,7 +11,7 @@ import { Button } from 'src/app/shared/interfaces/button';
   styleUrls: ['./page-list-orders.component.scss']
 })
 export class PageListOrdersComponent implements OnInit {
-  public collection$: Observable<Order[]>;
+  public collection$: Subject<Order[]> = new Subject();
   public title: string;
   public subtitle: string;
   public headers: string[];
@@ -36,7 +36,9 @@ export class PageListOrdersComponent implements OnInit {
     };
     this.title = 'Orders';
     this.subtitle = 'All orders';
-    this.collection$ = this.os.collection;
+    this.os.collection.subscribe((datas) => {
+      this.collection$.next(datas);
+    });
     this.headers = [
       'Type',
       'Client',
@@ -44,7 +46,8 @@ export class PageListOrdersComponent implements OnInit {
       'TjmHT',
       'Total HT',
       'Total TTC',
-      'State'
+      'State',
+      'Action'
     ];
   }
 
@@ -58,6 +61,15 @@ export class PageListOrdersComponent implements OnInit {
 
   public openPopup() {
     console.log('popup opened');
+  }
+
+  public delete(item: Order) {
+    this.os.delete(item).subscribe((res) => {
+      // traiter res de l'api;
+      this.os.collection.subscribe((datas) => {
+        this.collection$.next(datas);
+      });
+    });
   }
 
 }

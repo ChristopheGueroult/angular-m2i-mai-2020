@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { IconsModule } from '../icons/icons.module';
 import { SharedModule } from '../shared/shared.module';
 import { OrdersRoutingModule } from './orders-routing.module';
 import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orders.component';
@@ -11,7 +12,8 @@ import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orde
   imports: [
     CommonModule,
     OrdersRoutingModule,
-    SharedModule
+    SharedModule,
+    IconsModule
   ]
 })
 export class OrdersModule { }

@@ -26,7 +26,8 @@
 ✔ directive personnalisée @done(20-05-14 10:46)
 ✔ viewencapsulation @done(20-05-14 10:46)
 ☐ @Output()
-☐ component text
-☐ TP : validation des acquis (page-list-clients)
+✔ component text @done(20-05-14 15:35)
+✔ TP : validation des acquis (page-list-clients) @done(20-05-14 15:35)
+☐ Ex BehaviorSubject
 
 
