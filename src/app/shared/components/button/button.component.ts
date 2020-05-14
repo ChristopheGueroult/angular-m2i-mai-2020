@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -10,18 +10,15 @@ export class ButtonComponent implements OnInit {
   @Input() route: string;
   @Input() href: string;
   @Input() action: boolean;
+  @Output() clicked: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
 
   public doAction() {
-    console.log('action ok');
-
+    this.clicked.emit();
   }
 
 }
-// bouton qui au click redirige vers une route interne à l'application
-// bouton qui au click redirige vers une page externe à l'application
-// bouton qui au click lance une action (ouvrir un popup par exemple, affiche un msg, ...)
-// dans tous les cas un bouton qui doit pouvoir afficher du texte
+

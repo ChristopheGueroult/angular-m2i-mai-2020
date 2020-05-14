@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { StateOrder } from 'src/app/shared/enums/state-order.enum';
 import { Order } from 'src/app/shared/models/order';
 import { OrdersService } from '../../services/orders.service';
+import { Button } from 'src/app/shared/interfaces/button';
 
 @Component({
   selector: 'app-page-list-orders',
@@ -14,10 +15,25 @@ export class PageListOrdersComponent implements OnInit {
   public title: string;
   public subtitle: string;
   public headers: string[];
+  public btnRoute: Button;
+  public btnHref: Button;
+  public btnAction: Button;
   public states = Object.values(StateOrder);
   constructor(private os: OrdersService) { }
 
   ngOnInit(): void {
+    this.btnRoute = {
+      text: 'Add an order',
+      route: 'add'
+    };
+    this.btnHref = {
+      text: 'Google',
+      href: 'http://www.google.fr'
+    };
+    this.btnAction = {
+      text: 'Open popup',
+      action: true
+    };
     this.title = 'Orders';
     this.subtitle = 'All orders';
     this.collection$ = this.os.collection;
@@ -38,6 +54,10 @@ export class PageListOrdersComponent implements OnInit {
       item.state = res.state;
     });
 
+  }
+
+  public openPopup() {
+    console.log('popup opened');
   }
 
 }
