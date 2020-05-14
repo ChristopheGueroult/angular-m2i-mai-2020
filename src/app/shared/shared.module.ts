@@ -7,16 +7,18 @@ import { TableauDarkComponent } from './components/tableau-dark/tableau-dark.com
 import { TableauLightComponent } from './components/tableau-light/tableau-light.component';
 import { StateDirective } from './directives/state.directive';
 import { TotalPipe } from './pipes/total.pipe';
+import { TextModule } from '../text/text.module';
 
 
 
 @NgModule({
   declarations: [TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective],
-  exports: [TemplatesModule, TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective],
+  exports: [TemplatesModule, TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective, TextModule],
   imports: [
     CommonModule,
     TemplatesModule,
-    RouterModule
+    RouterModule,
+    TextModule
   ]
 })
 export class SharedModule { }
