@@ -2,17 +2,18 @@
 
   <app-tableau-dark *ngIf="collection$ | async as collection" [headers]="headers">
 
-    <tr *ngFor="let item of collection">
+    <tr *ngFor="let item of collection" (click)="loadDetails(item)">
       <td>{{ item.name }}</td>
       <td>{{ item.ca }}</td>
       <td>{{ item | total:'cattc' | currency: 'EUR' }}</td>
       <td [appState]="item.state">
-        <select (change)="changeState(item, $event)">
+        <select (change)="changeState(item, $event)" (click)="$event.stopPropagation()">
           <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">{{ state }}</option>
         </select>
       </td>
       <td>
-        <app-icon-trash (click)="delete(item)"></app-icon-trash>
+        <app-icon-trash (click)="$event.stopPropagation(); delete(item)"></app-icon-trash>
+        <app-icon-edit (click)="$event.stopPropagation(); edit(item)"></app-icon-edit>
       </td>
     </tr>
 
@@ -26,6 +27,9 @@
     <h3>A subsubtitle</h3>
     <p>A very nice text</p>
   </app-text>
+
+  <app-nav-inline [links]="navLinks"></app-nav-inline>
+  <router-outlet></router-outlet>
 
 </app-template-b>
 

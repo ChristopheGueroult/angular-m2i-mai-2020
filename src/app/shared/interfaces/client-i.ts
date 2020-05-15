@@ -5,4 +5,5 @@ export interface ClientI {
   'name': string;
   'ca': number;
   'state': StateClient;
+  'comment': string;
 }

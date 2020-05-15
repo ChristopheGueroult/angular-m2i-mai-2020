@@ -1,0 +1,3 @@
+<app-text [page]="true" *ngIf="firstItem$ | async as item">
+  <p>{{ item.name }}</p>
+</app-text>

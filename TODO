@@ -29,16 +29,28 @@
 ✔ component text @done(20-05-14 15:35)
 ✔ TP : validation des acquis (page-list-clients) @done(20-05-14 15:35)
 ✔ Ex Subject @done(20-05-15 08:23)
-☐ formulaires avec ReactiveFormsModule
-☐ les validateurs
-☐ afficher les erreurs dans un formulaire mal rempli
-☐ styles css pour les champs error ou succes d'un formulaire
-☐ pause dej
-☐ evaluation formateur et feuilles d'émargement
-☐ TP page edit
+✔ formulaires avec ReactiveFormsModule @done(20-05-15 09:49)
+✔ les validateurs @done(20-05-15 10:26)
+✔ afficher les erreurs dans un formulaire mal rempli @done(20-05-15 10:26)
+✔ styles css pour les champs error ou succes d'un formulaire @done(20-05-15 10:26)
+✔ pause dej @done(20-05-15 12:08)
+✔ evaluation formateur et feuilles d'émargement @done(20-05-15 13:42)
+✔ TP page edit @done(20-05-15 12:09)
+✔ Mette icon edit sur page-list-clients.html avec event click @done(20-05-15 13:42)
+✔ Créer la fn edit(item) dans page-list-clients.ts avec un router.navigate(['clients', 'edit', item.id]) @done(20-05-15 13:42)
+✔ Créer page-edit-client component @done(20-05-15 13:42)
+✔ Créer la route edit qui demande un paramètre id dans l'url @done(20-05-15 13:42)
+✔ Dans le ts de edit component, récupérer l'id dans l'url (ActivatedRoute) @done(20-05-15 13:42)
+✔ Dans le ts de edit component, call cs.getItemById(id).subscribe(data) @done(20-05-15 13:42)
+✔ Dans le html on utilise app-form-client et l'input init qu'on bind avec data @done(20-05-15 13:42)
+✔ Dans le html on laisse l'output qui appel cette fois ci une fn edit($event) @done(20-05-15 13:42)
+✔ Dans le ts de edit component on créé la fn edit(item) et qui utilise cs.update(item).subscribe(datas) @done(20-05-15 13:42)
+✔ Dans le subscribe, si res api ok, on redirige le user vers /clients @done(20-05-15 13:42)
+
+
 ☐ TP ex Behavior
-☐ TP passage de datas dans l'url
-☐ TP passage de datas dans le router
-☐ router et activatedRoute
+✔ TP passage de datas dans l'url @done(20-05-15 13:49)
+✔ TP passage de datas dans le router @done(20-05-15 13:57)
+✔ router et activatedRoute @done(20-05-15 13:57)
 
 

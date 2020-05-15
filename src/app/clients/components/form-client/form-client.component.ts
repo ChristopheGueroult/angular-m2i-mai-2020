@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { StateClient } from 'src/app/shared/enums/state-client.enum';
 import { Client } from 'src/app/shared/models/client';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -19,9 +19,16 @@ export class FormClientComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group({
       id: [this.init.id],
-      name: [this.init.name],
-      ca: [this.init.ca],
-      state: [this.init.state]
+      name: [
+        this.init.name,
+        Validators.required
+      ],
+      ca: [
+        this.init.ca,
+        Validators.compose([Validators.required, Validators.min(1), Validators.max(100000)])
+      ],
+      state: [this.init.state],
+      comment: [this.init.comment]
     });
   }
 

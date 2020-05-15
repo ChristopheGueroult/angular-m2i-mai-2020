@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconNavComponent } from './icon-nav.component';
+import { PageEditClientComponent } from './page-edit-client.component';
 
-describe('IconNavComponent', () => {
-  let component: IconNavComponent;
-  let fixture: ComponentFixture<IconNavComponent>;
+describe('PageEditClientComponent', () => {
+  let component: PageEditClientComponent;
+  let fixture: ComponentFixture<PageEditClientComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconNavComponent ]
+      declarations: [ PageEditClientComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IconNavComponent);
+    fixture = TestBed.createComponent(PageEditClientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

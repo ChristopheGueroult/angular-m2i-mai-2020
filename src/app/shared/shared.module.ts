@@ -8,12 +8,13 @@ import { TableauLightComponent } from './components/tableau-light/tableau-light.
 import { StateDirective } from './directives/state.directive';
 import { TotalPipe } from './pipes/total.pipe';
 import { TextModule } from '../text/text.module';
+import { NavInlineComponent } from './components/nav-inline/nav-inline.component';
 
 
 
 @NgModule({
-  declarations: [TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective],
-  exports: [TemplatesModule, TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective, TextModule],
+  declarations: [TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective, NavInlineComponent],
+  exports: [TemplatesModule, TableauLightComponent, ButtonComponent, TotalPipe, TableauDarkComponent, StateDirective, TextModule, NavInlineComponent],
   imports: [
     CommonModule,
     TemplatesModule,

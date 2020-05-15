@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconTrashComponent } from './icon-trash.component';
+import { CommentsClientComponent } from './comments-client.component';
 
-describe('IconTrashComponent', () => {
-  let component: IconTrashComponent;
-  let fixture: ComponentFixture<IconTrashComponent>;
+describe('CommentsClientComponent', () => {
+  let component: CommentsClientComponent;
+  let fixture: ComponentFixture<CommentsClientComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconTrashComponent ]
+      declarations: [ CommentsClientComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IconTrashComponent);
+    fixture = TestBed.createComponent(CommentsClientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

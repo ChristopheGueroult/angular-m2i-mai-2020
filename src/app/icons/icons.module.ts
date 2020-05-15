@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { IconNavComponent } from './font-awesome-components/icon-close/icon-nav/icon-nav.component';
-import { IconCloseComponent } from './font-awesome-components/icon-close/icon-close.component';
-import { IconEditComponent } from './font-awesome-components/icon-close/icon-edit/icon-edit.component';
-import { IconTrashComponent } from './font-awesome-components/icon-close/icon-trash/icon-trash.component';
+import { IconCloseComponent } from './components/icon-close/icon-close.component';
+import { IconEditComponent } from './components/icon-edit/icon-edit.component';
+import { IconNavComponent } from './components/icon-nav/icon-nav.component';
+import { IconTrashComponent } from './components/icon-trash/icon-trash.component';
 
 
 @NgModule({

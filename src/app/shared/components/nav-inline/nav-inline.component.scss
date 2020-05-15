@@ -1,0 +1,12 @@
+@import 'theme';
+
+.active {
+  color: $color3;
+}
+
+:host-context(app-template-a) .active {
+  color: $color1;
+}
+:host-context(app-template-b) .active {
+  color: $color2;
+}

@@ -1,0 +1,7 @@
+<app-template-b [title]="title" [subtitle]="subtitle">
+
+  <div class="container">
+    <app-form-client *ngIf="item$ | async as item" [init]="item" (formSubmited)="edit($event)"></app-form-client>
+  </div>
+
+</app-template-b>

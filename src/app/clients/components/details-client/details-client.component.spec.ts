@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconCloseComponent } from './icon-close.component';
+import { DetailsClientComponent } from './details-client.component';
 
-describe('IconCloseComponent', () => {
-  let component: IconCloseComponent;
-  let fixture: ComponentFixture<IconCloseComponent>;
+describe('DetailsClientComponent', () => {
+  let component: DetailsClientComponent;
+  let fixture: ComponentFixture<DetailsClientComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconCloseComponent ]
+      declarations: [ DetailsClientComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IconCloseComponent);
+    fixture = TestBed.createComponent(DetailsClientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

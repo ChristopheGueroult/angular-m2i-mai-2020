@@ -6,6 +6,7 @@ export class Client implements ClientI {
   name: string;
   ca: number;
   state = StateClient.ACTIVE;
+  comment: string;
   constructor(obj?: Partial<Client>) {
     if (obj) {
       Object.assign(this, obj);
