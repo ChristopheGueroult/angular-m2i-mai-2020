@@ -1,9 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { StateClient } from 'src/app/shared/enums/state-client.enum';
 import { Client } from 'src/app/shared/models/client';
 import { environment } from 'src/environments/environment';
-import { HttpClient } from '@angular/common/http';
-import { StateClient } from 'src/app/shared/enums/state-client.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +37,9 @@ export class ClientsService {
   }
 
   // add item in collection
+  public add(item: Client): Observable<Client> {
+    return this.http.post<Client>(`${this.urlApi}clients`, item);
+  }
 
   // delete item in collection
   public delete(item: Client): Observable<Client> {

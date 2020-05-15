@@ -27,6 +27,18 @@
       "id": 1,
       "name": "Christophe",
       "ca": 12000
+    },
+    {
+      "id": 2,
+      "name": "Modis",
+      "ca": 120000,
+      "state": "Active"
+    },
+    {
+      "id": 3,
+      "name": "Capgemini",
+      "ca": 14000,
+      "state": "Active"
     }
   ]
 }
